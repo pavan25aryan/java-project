@@ -1,40 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+package com.example;
 
-  <groupId>com.example</groupId>
-  <artifactId>my-webapp</artifactId>
-  <version>1.0</version>
-  <packaging>war</packaging>
-
-  <name>My Web Application</name>
-
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-
-  <build>
-    <finalName>my-webapp</finalName>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.4.0</version>
-      </plugin>
-    </plugins>
-  </build>
-
-  <dependencies>
-    <!-- Example Servlet API dependency -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
-
-</project>
+public class AddNumbers {
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 20;
+        int sum = num1 + num2;
+        System.out.println("The sum is: " + sum);
+    }
+}
